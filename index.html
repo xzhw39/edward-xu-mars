@@ -4,31 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator</title>
-    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <title>Coding Assessment</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
-        </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+    <header>
+      <div class="viewScore">
+          <div id="title"></div>
+          <div id="questions"></div>
+          <div  id="startScreen"> 
+          <button id="startButton">Start</button>
+          </div>
+          <div id="submitButton"></div>
+          <h1>View Highscores</h1>
+      </div>
+      <div class="Timer">
+        <h1>Time: </h1>
+      </div>
+    </header>
+    <div class="content" id="content">
+      <div class="start" id="start">
+        <h2>Coding Quiz Challenge</h2>
+        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </p>
+        <button class="startButton" id="startButton">Start Quiz</button>
+      </div>
+      
+      <div class="questions" id="hide">
+        <h2 id="question-title">
+          <p>Commonly used data types DO NOT include:</p>
+        </h2>
+        <div class="choices" id="choices">
+          <button class="strings" id="strings">1. strings</button>
+          <button class="booleans" id="booleans">1. strings</button>
+          <button class="alerts" id="alerts">1. strings</button>
+          <button class="numbers" id="numbers">1. strings</button>
         </div>
       </div>
+
+
+
+<!-- Final score display -->
+
+      <div class="hide" id="end-screen">
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter initials: <input type="text" id="initials" max="5" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div class="feedbackHide" id="feedback"></div>
     </div>
-    <script src="./Assets/js/script.js"></script>
+
+    
+    <script type="module" src="./assets/js/questions.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
   </body>
 </html>

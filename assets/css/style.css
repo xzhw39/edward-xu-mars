@@ -1,0 +1,68 @@
+/* Declare variables */
+
+:root {
+    --section-header-padding: 50px 0px;
+    --about-me-color: antiquewhite;
+    --work-color: lightblue;
+    --contact-me-color: lightgrey;
+    --light: #fff;
+    --navlink-color: #b9c6ae;
+  }
+
+/* Global layout */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", sans-serif;
+    
+}
+
+/* Global heading font */
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+
+h3 {
+    font-size: 28px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: fff;
+}
+
+/* Header view score */
+
+header h1 {
+    padding: 18px;
+    font-weight: 30px;
+    color: purple;
+
+}
+
+/* Header timer */
+
+header h2 {
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    font-weight: 25px;
+    text-decoration: none;
+    color:purple;
+}
+
+
+.hide{display: hidden;}
+

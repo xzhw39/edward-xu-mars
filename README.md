@@ -12,7 +12,7 @@ The profile page includes a header which comprises of a logo and a navigation ba
 
 * **User-friendly web interface **
 
-![](./Assets/pics/interface.png)
+![](./assets/pics/interface.png)
 
 
 
@@ -20,25 +20,25 @@ The profile page includes a header which comprises of a logo and a navigation ba
 
 * **Prompt shown after user click the button**
 
-![](./Assets/pics/length-prompt.png)
+![](./assets/pics/length-prompt.png)
 
-![](./Assets/pics/uppercase-prompt.png)
+![](./assets/pics/uppercase-prompt.png)
 
-![](./Assets/pics/lowercase-prompt.png)
+![](./assets/pics/lowercase-prompt.png)
 
-![](./Assets/pics/number-prompt.png)
+![](./assets/pics/number-prompt.png)
 
-![](./Assets/pics/special-character-prompt.png)
+![](./assets/pics/special-character-prompt.png)
 
 
 ### <ins> Password is generated immediately after user's input</ins>
 
-![](./Assets/pics/password-shown.png)
+![](./assets/pics/password-shown.png)
 
 ## Link to Work
 
-[GitHub](https://github.com/xzhw39/edward-xu-earth)
+[GitHub](https://github.com/xzhw39/edward-xu-mars)
 
 
-[Deployed Website](https://xzhw39.github.io/edward-xu-earth/)
+[Deployed Website](https://xzhw39.github.io/edward-xu-mars/)
 
