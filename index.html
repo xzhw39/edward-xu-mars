@@ -1,65 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Assessment</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <div class="viewScore">
-          <div id="title"></div>
-          <div id="questions"></div>
-          <div  id="startScreen"> 
-          <button id="startButton">Start</button>
-          </div>
-          <div id="submitButton"></div>
-          <h1>View Highscores</h1>
-      </div>
-      <div class="Timer">
-        <h1>Time: </h1>
-      </div>
-    </header>
-    <div class="content" id="content">
-      <div class="start" id="start">
-        <h2>Coding Quiz Challenge</h2>
-        <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
-        </p>
-        <button class="startButton" id="startButton">Start Quiz</button>
-      </div>
-      
-      <div class="questions" id="hide">
-        <h2 id="question-title">
-          <p>Commonly used data types DO NOT include:</p>
-        </h2>
-        <div class="choices" id="choices">
-          <button class="strings" id="strings">1. strings</button>
-          <button class="booleans" id="booleans">1. strings</button>
-          <button class="alerts" id="alerts">1. strings</button>
-          <button class="numbers" id="numbers">1. strings</button>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Coding Quiz Game</title>
+    <link type='text/css' rel='stylesheet' href='./assets/css/style.css' />
+</head>
+
+<body>
+    <header class = "headBar">
+        <a href="#" onclick = 'viewScoreBtn()' class = "viewScores">View Highscores</a>
+        <div class= "quizTimer">
+          <div>Time: </div>
+          <div id = "timerCount">60</div>
+          <div id = "second">s</div>
         </div>
-      </div>
+    </header>
+    <main>
+      <card class = "container">
+        <section id = "textBoxContainer">
+          <div id = "textBox"> 
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answers the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds! </p>
+          </div><br>
+          <button id="startBtn" class="startBtn button">Start Quiz</button>
+        </section>
+        <section id = "submitForm" class = "hide">
+          <h1>All Done!</h1><br>
+          <h2 class = 'scoreInfo'></h2><br>
+          <form class = "name">
+            <label for = "initials">Enter Initials: </label>
+            <input id = "initials" name = "initials" type="text" maxlength="4" size="4" onClick = clearEl()>
+            <button id="submitBtn" class= "submitBtn button">Submit</button>
+          </form><br>
+        </section>
+        <section id = "highScore" class = 'hide'>
+          <h1>HighScores</h1><br>
+          <ol id = "scoreList"></ol><br><br>
+          <div class = "controls">
+          <button id="goBackBtn" class="goBackBtn button controls">Go Back</button>
+          <button id="clearBtn" class="clearBtn button controls">Clear Highscores</button>
+          </div> 
+        </section>
+        <section class = "quizQuestions">
+          <h1  id="questionBox" class = "hide">Question:</h1><br>
+          <div id = "ansBtn" class = "hide"></div><br>
+        </section>
+        <section>
+          <p id = "correct" class = "hide">Correct!</p>
+          <p id = "wrong" class = "hide">Wrong!</p>
+        </section>
+        
+      </card>
+    </main>
 
+  
+  <script type='text/javascript' src='./assets/js/script.js'></script>
+</body>
 
-
-<!-- Final score display -->
-
-      <div class="hide" id="end-screen">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
-        <p>
-          Enter initials: <input type="text" id="initials" max="5" />
-          <button id="submit">Submit</button>
-        </p>
-      </div>
-
-      <div class="feedbackHide" id="feedback"></div>
-    </div>
-
-    
-    <script type="module" src="./assets/js/questions.js"></script>
-    <script type="module" src="./assets/js/script.js"></script>
-  </body>
 </html>

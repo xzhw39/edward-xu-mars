@@ -1,68 +1,158 @@
-/* Declare variables */
-
-:root {
-    --section-header-padding: 50px 0px;
-    --about-me-color: antiquewhite;
-    --work-color: lightblue;
-    --contact-me-color: lightgrey;
-    --light: #fff;
-    --navlink-color: #b9c6ae;
-  }
-
-/* Global layout */
-
+/* Root level Style */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "roboto", sans-serif;
-    
+    font-family: "Arial", sans-serif;
+
 }
 
-/* Global heading font */
+/* Header Bar Style */
+.headBar {
+    font-size: 30px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1%;
+}
 
-h1 {
-    font-size: 40px;
+.headBar a {
+    text-decoration: none;
+}
+
+.quizTimer {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+
+.quizTimer div {
+    padding: 0px 5px;
+}
+
+/* Quiz Card Style */
+.container {
+    margin: auto;
+    padding: 2%;
+    background-color: #fff;
+    border: 5px solid hidden;
+    border-radius: 5px;
+    color: black;
+    font-weight: bolder;
+    width: 50%;
+    height: 50%;
+    display: grid;
+}
+
+/* Start Page */
+#textBoxContainer {
+    font-size: 25px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* Questions page */
+#questionBox {
+    font-size: 1.5rem;
+    margin: 1%;
+}
+
+.quizQuestions {
+    display: flex;
+    flex-direction: column;
+    justify-items: right;
+}
+
+#correct {
+    font-size: 1.5rem;
+    margin: 1%;
+    border-top: black solid;
+    font-style: italic;
+    color: green;
+}
+
+#wrong {
+font-size: 1.5rem;
+margin: 1%;
+border-top: black solid;
+font-style: italic;
+color: red;
+}
+
+/* Submit Form */
+.submitForm {
+    margin: auto;
+    padding: 2%;
+    background-color: lightblue;
+    border: 5px solid aqua;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    width: 50%;
+    height: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitForm h1 {
+    font-size: 2rem;
+    margin: 1%;
+}
+
+#highScore h1 {
+    font-size: 2rem;
+    margin: 1%;
+}
+
+#scoreList {
+    font-size: 1.5rem;
+    margin: 1%;
+    background-color: yellow;
+    width: 60vh;
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 1.5rem;
+    padding: 5% 0%;
 }
 
-
-h3 {
-    font-size: 28px;
-}
-
-/* Header */
-
-header {
+.name {
+    font-size: 1.5rem;
+    margin: 1%;
     display: flex;
+    flex-direction: row;
+    justify-content: right;
     align-items: center;
-    justify-content: space-between;
-    background-color: fff;
-}
-
-/* Header view score */
-
-header h1 {
-    padding: 18px;
-    font-weight: 30px;
-    color: purple;
-
-}
-
-/* Header timer */
-
-header h2 {
-    list-style: none;
-    display: inline;
-    padding: 20px;
-    font-weight: 25px;
-    text-decoration: none;
-    color:purple;
+    margin: 1%;
 }
 
 
-.hide{display: hidden;}
+/* Buttons */
+.button {
+    border:3px solid hidden;
+    border-radius:5px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: purple;
+    margin: 1%;
+    font-size: 1.2rem;
+    color: white;
+    padding: 0% 5%;
+}
 
+.controls {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
