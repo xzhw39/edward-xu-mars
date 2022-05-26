@@ -1,39 +1,34 @@
-# Password Generator
+# Code Quiz
 
 ## Description
 
-This project is aimed to develop a password generator that can generate a random password up to 128 characters and the character types can be a combination of lower/upper case letters, numbers, and special characters based on the user's choice.
+This project aims to develop a timed quiz that tests user's coding knowledge. The quiz will contain several questions and the user will obtain a final score after attempting all questions.
 
 ## Work Performed
 
-### <ins>User-friendly versatile password generation based on the user's request</ins>
+### <ins>User-friendly start page</ins>
 
-The profile page includes a header which comprises of a logo and a navigation bar, a body that has about, work, and contact sections. 
+The start page contains detailed quiz instructions, a time, a start button, and a link to view high scores.
 
-* **User-friendly web interface **
-
-![](./assets/pics/interface.png)
+![](./assets/pics/start-page.png)
 
 
+### <ins>Multiple choice questions </ins>
 
-### <ins>Generation of password based on the user's preference </ins>
+The user will be shown with a list of multiple choice questions. The timer will start as soon as the user clicks "start quiz". The user will be notified if they answer correctly after making the choices.
 
-* **Prompt shown after user click the button**
+![](./assets/pics/questions.png)
 
-![](./assets/pics/length-prompt.png)
+### <ins> Final score</ins>
 
-![](./assets/pics/uppercase-prompt.png)
+After the timer runs out or the user finishes answering all the questions, a final score will be shown and the user can enter initials to save the score.
 
-![](./assets/pics/lowercase-prompt.png)
+![](./assets/pics/score.png)
 
-![](./assets/pics/number-prompt.png)
+### <ins> View high scores</ins>
 
-![](./assets/pics/special-character-prompt.png)
-
-
-### <ins> Password is generated immediately after user's input</ins>
-
-![](./assets/pics/password-shown.png)
+The user can click the "View Highscores" link on the top left corner of the page to view past scores and can choose to go back to the main page or clear all previous scores.
+![](./assets/pics/high-score.png)
 
 ## Link to Work
 

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Coding Quiz Game</title>
+    <title>Code Quiz</title>
     <link type='text/css' rel='stylesheet' href='./assets/css/style.css' />
 </head>
 
 <body>
-    <header class = "headBar">
+    <header class = "headerNav">
         <a href="#" onclick = 'viewScoreBtn()' class = "viewScores">View Highscores</a>
-        <div class= "quizTimer">
+        <div class= "timer">
           <div>Time: </div>
           <div id = "timerCount">60</div>
           <div id = "second">s</div>
@@ -38,7 +38,7 @@
         <section id = "highScore" class = 'hide'>
           <h1>HighScores</h1><br>
           <ol id = "scoreList"></ol><br><br>
-          <div class = "controls">
+          <div class = "backOrClear">
           <button id="goBackBtn" class="goBackBtn button controls">Go Back</button>
           <button id="clearBtn" class="clearBtn button controls">Clear Highscores</button>
           </div> 

@@ -155,7 +155,7 @@ function userSelection(event){
     }
   } else {
     answerWrong.classList.remove('hide');
-    remainingTime = remainingTime - 5;
+    remainingTime = remainingTime - 10;
     while (ansBtn.firstChild) {
       ansBtn.removeChild(ansBtn.firstChild);
     }
